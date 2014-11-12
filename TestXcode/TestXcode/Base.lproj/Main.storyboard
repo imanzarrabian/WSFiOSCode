@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14A388a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14A388a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="uWj-De-hih">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
@@ -37,22 +37,34 @@
                                     <segue destination="XT9-5t-5Rc" kind="presentation" id="7Ek-pn-5v1"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="219-W7-0aF">
+                                <rect key="frame" x="283" y="362" width="35" height="30"/>
+                                <state key="normal" title="Push">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="XT9-5t-5Rc" kind="show" id="XNq-QN-gyP"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.05462797728634932" green="0.81176470590000005" blue="0.28676018610500642" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="centerX" secondItem="CBm-h3-XQa" secondAttribute="centerX" id="AoZ-e5-hTK"/>
                             <constraint firstItem="CBm-h3-XQa" firstAttribute="top" secondItem="SCh-60-hVo" secondAttribute="bottom" constant="83" id="HW4-Fn-VbI"/>
                             <constraint firstItem="SCh-60-hVo" firstAttribute="centerX" secondItem="CBm-h3-XQa" secondAttribute="centerX" id="Or4-g4-fjF"/>
+                            <constraint firstItem="219-W7-0aF" firstAttribute="top" secondItem="CBm-h3-XQa" secondAttribute="bottom" constant="47" id="TPP-4c-hkE"/>
                             <constraint firstAttribute="centerY" secondItem="CBm-h3-XQa" secondAttribute="centerY" id="qcj-JR-Mbe"/>
+                            <constraint firstAttribute="centerX" secondItem="219-W7-0aF" secondAttribute="centerX" id="vAh-1c-H5w"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="Kom-YY-v4z"/>
                     <connections>
                         <outlet property="myButton" destination="CBm-h3-XQa" id="s4Q-9S-d0n"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="39" y="143"/>
+            <point key="canvasLocation" x="851" y="143"/>
         </scene>
         <!--Detail View Controller-->
         <scene sceneID="CNG-PV-hcO">
@@ -69,23 +81,64 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9nF-Ki-AM5">
                                 <rect key="frame" x="273" y="285" width="54" height="30"/>
                                 <state key="normal" title="Dismiss">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="dismissOnTouch:" destination="XT9-5t-5Rc" eventType="touchUpInside" id="Abu-FY-ulK"/>
                                 </connections>
                             </button>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iWq-WY-48c">
+                                <rect key="frame" x="0.0" y="20" width="600" height="44"/>
+                                <items>
+                                    <navigationItem id="4I3-GB-2i1">
+                                        <barButtonItem key="rightBarButtonItem" title="dismiss" id="E1q-Nb-dMS">
+                                            <connections>
+                                                <action selector="dismissOnTouch:" destination="XT9-5t-5Rc" id="Nkx-SS-QHA"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" red="0.89856296328010921" green="1" blue="0.39006859173673636" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="centerY" secondItem="9nF-Ki-AM5" secondAttribute="centerY" id="884-T0-39n"/>
+                            <constraint firstItem="iWq-WY-48c" firstAttribute="top" secondItem="L8j-es-F7g" secondAttribute="bottom" id="X7n-lv-wiB"/>
                             <constraint firstAttribute="centerX" secondItem="9nF-Ki-AM5" secondAttribute="centerX" id="eea-n9-HkP"/>
+                            <constraint firstAttribute="trailing" secondItem="iWq-WY-48c" secondAttribute="trailing" id="hPq-jQ-wFM"/>
+                            <constraint firstItem="iWq-WY-48c" firstAttribute="leading" secondItem="4hC-th-H7U" secondAttribute="leading" id="lFD-oS-urH"/>
                         </constraints>
                     </view>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <connections>
+                        <outlet property="myNavBar" destination="iWq-WY-48c" id="ZRW-nm-Civ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UGm-YH-yZ8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="776" y="143"/>
+            <point key="canvasLocation" x="1588" y="143"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="cZI-dv-XEB">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="uWj-De-hih" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Eeg-RZ-2bD">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Mih-5j-vYm"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3Ih-IL-vfs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="39" y="143"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="XNq-QN-gyP"/>
+    </inferredMetricsTieBreakers>
 </document>

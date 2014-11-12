@@ -10,6 +10,7 @@
 
 @interface DetailViewController ()
 @property (nonatomic, strong) NSArray *myColorsArray;
+@property (nonatomic, weak) IBOutlet UINavigationBar *myNavBar;
 @end
 
 @implementation DetailViewController
@@ -24,7 +25,16 @@
     
     NSInteger randomIndex = arc4random() % 4;
     self.view.backgroundColor = self.myColorsArray[randomIndex];
+
 }
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    if (self.presentingViewController == nil) {
+        self.myNavBar.hidden = YES;
+    }
+}
+
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
 }

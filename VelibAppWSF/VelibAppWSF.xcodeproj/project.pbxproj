@@ -1,0 +1,464 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9C9965551A13802D00F1B4CC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C9965541A13802D00F1B4CC /* main.m */; };
+		9C9965581A13802D00F1B4CC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C9965571A13802D00F1B4CC /* AppDelegate.m */; };
+		9C99655B1A13802D00F1B4CC /* VelibAppWSF.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9C9965591A13802D00F1B4CC /* VelibAppWSF.xcdatamodeld */; };
+		9C99655E1A13802D00F1B4CC /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C99655D1A13802D00F1B4CC /* MasterViewController.m */; };
+		9C9965611A13802D00F1B4CC /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C9965601A13802D00F1B4CC /* DetailViewController.m */; };
+		9C9965641A13802D00F1B4CC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C9965621A13802D00F1B4CC /* Main.storyboard */; };
+		9C9965661A13802D00F1B4CC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C9965651A13802D00F1B4CC /* Images.xcassets */; };
+		9C9965691A13802D00F1B4CC /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C9965671A13802D00F1B4CC /* LaunchScreen.xib */; };
+		9C9965751A13802D00F1B4CC /* VelibAppWSFTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C9965741A13802D00F1B4CC /* VelibAppWSFTests.m */; };
+		9C9965801A13812600F1B4CC /* InfosViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C99657F1A13812600F1B4CC /* InfosViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9C99656F1A13802D00F1B4CC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9C9965471A13802D00F1B4CC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9C99654E1A13802D00F1B4CC;
+			remoteInfo = VelibAppWSF;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9C99654F1A13802D00F1B4CC /* VelibAppWSF.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VelibAppWSF.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C9965531A13802D00F1B4CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9C9965541A13802D00F1B4CC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9C9965561A13802D00F1B4CC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		9C9965571A13802D00F1B4CC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		9C99655A1A13802D00F1B4CC /* VelibAppWSF.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = VelibAppWSF.xcdatamodel; sourceTree = "<group>"; };
+		9C99655C1A13802D00F1B4CC /* MasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
+		9C99655D1A13802D00F1B4CC /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
+		9C99655F1A13802D00F1B4CC /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		9C9965601A13802D00F1B4CC /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		9C9965631A13802D00F1B4CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9C9965651A13802D00F1B4CC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		9C9965681A13802D00F1B4CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		9C99656E1A13802D00F1B4CC /* VelibAppWSFTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VelibAppWSFTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C9965731A13802D00F1B4CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9C9965741A13802D00F1B4CC /* VelibAppWSFTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VelibAppWSFTests.m; sourceTree = "<group>"; };
+		9C99657E1A13812600F1B4CC /* InfosViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfosViewController.h; sourceTree = "<group>"; };
+		9C99657F1A13812600F1B4CC /* InfosViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfosViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9C99654C1A13802D00F1B4CC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9C99656B1A13802D00F1B4CC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9C9965461A13802D00F1B4CC = {
+			isa = PBXGroup;
+			children = (
+				9C9965511A13802D00F1B4CC /* VelibAppWSF */,
+				9C9965711A13802D00F1B4CC /* VelibAppWSFTests */,
+				9C9965501A13802D00F1B4CC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9C9965501A13802D00F1B4CC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9C99654F1A13802D00F1B4CC /* VelibAppWSF.app */,
+				9C99656E1A13802D00F1B4CC /* VelibAppWSFTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9C9965511A13802D00F1B4CC /* VelibAppWSF */ = {
+			isa = PBXGroup;
+			children = (
+				9C9965811A13813500F1B4CC /* VC */,
+				9C9965561A13802D00F1B4CC /* AppDelegate.h */,
+				9C9965571A13802D00F1B4CC /* AppDelegate.m */,
+				9C9965621A13802D00F1B4CC /* Main.storyboard */,
+				9C9965651A13802D00F1B4CC /* Images.xcassets */,
+				9C9965671A13802D00F1B4CC /* LaunchScreen.xib */,
+				9C9965591A13802D00F1B4CC /* VelibAppWSF.xcdatamodeld */,
+				9C9965521A13802D00F1B4CC /* Supporting Files */,
+			);
+			path = VelibAppWSF;
+			sourceTree = "<group>";
+		};
+		9C9965521A13802D00F1B4CC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9C9965531A13802D00F1B4CC /* Info.plist */,
+				9C9965541A13802D00F1B4CC /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9C9965711A13802D00F1B4CC /* VelibAppWSFTests */ = {
+			isa = PBXGroup;
+			children = (
+				9C9965741A13802D00F1B4CC /* VelibAppWSFTests.m */,
+				9C9965721A13802D00F1B4CC /* Supporting Files */,
+			);
+			path = VelibAppWSFTests;
+			sourceTree = "<group>";
+		};
+		9C9965721A13802D00F1B4CC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9C9965731A13802D00F1B4CC /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9C9965811A13813500F1B4CC /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				9C99655C1A13802D00F1B4CC /* MasterViewController.h */,
+				9C99655D1A13802D00F1B4CC /* MasterViewController.m */,
+				9C99655F1A13802D00F1B4CC /* DetailViewController.h */,
+				9C9965601A13802D00F1B4CC /* DetailViewController.m */,
+				9C99657E1A13812600F1B4CC /* InfosViewController.h */,
+				9C99657F1A13812600F1B4CC /* InfosViewController.m */,
+			);
+			name = VC;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9C99654E1A13802D00F1B4CC /* VelibAppWSF */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9C9965781A13802D00F1B4CC /* Build configuration list for PBXNativeTarget "VelibAppWSF" */;
+			buildPhases = (
+				9C99654B1A13802D00F1B4CC /* Sources */,
+				9C99654C1A13802D00F1B4CC /* Frameworks */,
+				9C99654D1A13802D00F1B4CC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VelibAppWSF;
+			productName = VelibAppWSF;
+			productReference = 9C99654F1A13802D00F1B4CC /* VelibAppWSF.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9C99656D1A13802D00F1B4CC /* VelibAppWSFTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9C99657B1A13802D00F1B4CC /* Build configuration list for PBXNativeTarget "VelibAppWSFTests" */;
+			buildPhases = (
+				9C99656A1A13802D00F1B4CC /* Sources */,
+				9C99656B1A13802D00F1B4CC /* Frameworks */,
+				9C99656C1A13802D00F1B4CC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9C9965701A13802D00F1B4CC /* PBXTargetDependency */,
+			);
+			name = VelibAppWSFTests;
+			productName = VelibAppWSFTests;
+			productReference = 9C99656E1A13802D00F1B4CC /* VelibAppWSFTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9C9965471A13802D00F1B4CC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Iman Zarrabian";
+				TargetAttributes = {
+					9C99654E1A13802D00F1B4CC = {
+						CreatedOnToolsVersion = 6.1;
+					};
+					9C99656D1A13802D00F1B4CC = {
+						CreatedOnToolsVersion = 6.1;
+						TestTargetID = 9C99654E1A13802D00F1B4CC;
+					};
+				};
+			};
+			buildConfigurationList = 9C99654A1A13802D00F1B4CC /* Build configuration list for PBXProject "VelibAppWSF" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9C9965461A13802D00F1B4CC;
+			productRefGroup = 9C9965501A13802D00F1B4CC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9C99654E1A13802D00F1B4CC /* VelibAppWSF */,
+				9C99656D1A13802D00F1B4CC /* VelibAppWSFTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9C99654D1A13802D00F1B4CC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C9965641A13802D00F1B4CC /* Main.storyboard in Resources */,
+				9C9965691A13802D00F1B4CC /* LaunchScreen.xib in Resources */,
+				9C9965661A13802D00F1B4CC /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9C99656C1A13802D00F1B4CC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9C99654B1A13802D00F1B4CC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C9965801A13812600F1B4CC /* InfosViewController.m in Sources */,
+				9C9965611A13802D00F1B4CC /* DetailViewController.m in Sources */,
+				9C99655E1A13802D00F1B4CC /* MasterViewController.m in Sources */,
+				9C9965581A13802D00F1B4CC /* AppDelegate.m in Sources */,
+				9C99655B1A13802D00F1B4CC /* VelibAppWSF.xcdatamodeld in Sources */,
+				9C9965551A13802D00F1B4CC /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9C99656A1A13802D00F1B4CC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C9965751A13802D00F1B4CC /* VelibAppWSFTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9C9965701A13802D00F1B4CC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9C99654E1A13802D00F1B4CC /* VelibAppWSF */;
+			targetProxy = 9C99656F1A13802D00F1B4CC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9C9965621A13802D00F1B4CC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9C9965631A13802D00F1B4CC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9C9965671A13802D00F1B4CC /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9C9965681A13802D00F1B4CC /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9C9965761A13802D00F1B4CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		9C9965771A13802D00F1B4CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9C9965791A13802D00F1B4CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = VelibAppWSF/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		9C99657A1A13802D00F1B4CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = VelibAppWSF/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		9C99657C1A13802D00F1B4CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = VelibAppWSFTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VelibAppWSF.app/VelibAppWSF";
+			};
+			name = Debug;
+		};
+		9C99657D1A13802D00F1B4CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = VelibAppWSFTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VelibAppWSF.app/VelibAppWSF";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9C99654A1A13802D00F1B4CC /* Build configuration list for PBXProject "VelibAppWSF" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9C9965761A13802D00F1B4CC /* Debug */,
+				9C9965771A13802D00F1B4CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9C9965781A13802D00F1B4CC /* Build configuration list for PBXNativeTarget "VelibAppWSF" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9C9965791A13802D00F1B4CC /* Debug */,
+				9C99657A1A13802D00F1B4CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		9C99657B1A13802D00F1B4CC /* Build configuration list for PBXNativeTarget "VelibAppWSFTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9C99657C1A13802D00F1B4CC /* Debug */,
+				9C99657D1A13802D00F1B4CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		9C9965591A13802D00F1B4CC /* VelibAppWSF.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				9C99655A1A13802D00F1B4CC /* VelibAppWSF.xcdatamodel */,
+			);
+			currentVersion = 9C99655A1A13802D00F1B4CC /* VelibAppWSF.xcdatamodel */;
+			path = VelibAppWSF.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 9C9965471A13802D00F1B4CC /* Project object */;
+}
