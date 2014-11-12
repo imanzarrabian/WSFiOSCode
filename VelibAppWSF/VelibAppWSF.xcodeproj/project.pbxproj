@@ -17,6 +17,7 @@
 		9C9965691A13802D00F1B4CC /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C9965671A13802D00F1B4CC /* LaunchScreen.xib */; };
 		9C9965751A13802D00F1B4CC /* VelibAppWSFTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C9965741A13802D00F1B4CC /* VelibAppWSFTests.m */; };
 		9C9965801A13812600F1B4CC /* InfosViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C99657F1A13812600F1B4CC /* InfosViewController.m */; };
+		9CCF50FA1A13B94700857482 /* StationTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CCF50F91A13B94700857482 /* StationTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,8 @@
 		9C9965741A13802D00F1B4CC /* VelibAppWSFTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VelibAppWSFTests.m; sourceTree = "<group>"; };
 		9C99657E1A13812600F1B4CC /* InfosViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfosViewController.h; sourceTree = "<group>"; };
 		9C99657F1A13812600F1B4CC /* InfosViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfosViewController.m; sourceTree = "<group>"; };
+		9CCF50F81A13B94700857482 /* StationTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StationTableViewCell.h; sourceTree = "<group>"; };
+		9CCF50F91A13B94700857482 /* StationTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StationTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +92,7 @@
 		9C9965511A13802D00F1B4CC /* VelibAppWSF */ = {
 			isa = PBXGroup;
 			children = (
+				9CCF50FB1A13B95000857482 /* Cells */,
 				9C9965811A13813500F1B4CC /* VC */,
 				9C9965561A13802D00F1B4CC /* AppDelegate.h */,
 				9C9965571A13802D00F1B4CC /* AppDelegate.m */,
@@ -138,6 +142,15 @@
 				9C99657F1A13812600F1B4CC /* InfosViewController.m */,
 			);
 			name = VC;
+			sourceTree = "<group>";
+		};
+		9CCF50FB1A13B95000857482 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				9CCF50F81A13B94700857482 /* StationTableViewCell.h */,
+				9CCF50F91A13B94700857482 /* StationTableViewCell.m */,
+			);
+			name = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -242,6 +255,7 @@
 			files = (
 				9C9965801A13812600F1B4CC /* InfosViewController.m in Sources */,
 				9C9965611A13802D00F1B4CC /* DetailViewController.m in Sources */,
+				9CCF50FA1A13B94700857482 /* StationTableViewCell.m in Sources */,
 				9C99655E1A13802D00F1B4CC /* MasterViewController.m in Sources */,
 				9C9965581A13802D00F1B4CC /* AppDelegate.m in Sources */,
 				9C99655B1A13802D00F1B4CC /* VelibAppWSF.xcdatamodeld in Sources */,
@@ -436,6 +450,7 @@
 				9C99657A1A13802D00F1B4CC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9C99657B1A13802D00F1B4CC /* Build configuration list for PBXNativeTarget "VelibAppWSFTests" */ = {
 			isa = XCConfigurationList;
@@ -444,6 +459,7 @@
 				9C99657D1A13802D00F1B4CC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
