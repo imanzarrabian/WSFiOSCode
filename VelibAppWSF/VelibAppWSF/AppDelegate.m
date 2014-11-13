@@ -9,7 +9,7 @@
 #import "AppDelegate.h"
 #import "DetailViewController.h"
 #import "MasterViewController.h"
-
+#import "Station.h"
 @interface AppDelegate ()
 
 @end
@@ -47,10 +47,16 @@
                                                                if ([jsonObject isKindOfClass:[NSArray class]]) {
                                                                    dispatch_async(dispatch_get_main_queue(), ^{
                                                                        
+                                                                       NSMutableArray *stationArray = [[NSMutableArray alloc] init];
+                                                                       
                                                                        for (NSDictionary *station in jsonObject) {
-                                                                           NSLog(@"STATION %@",station);
-
+                                                                           Station *stationObject = [[Station alloc] init];
+                                                                           [stationObject fillWithDictionary:station];
+                                                                           [stationArray addObject:stationObject];
                                                                        }
+                                                                       NSLog(@"NUMBER OF STATIONS CREATED %ld",[stationArray count]);
+                                                                       
+                                                                       [[NSNotificationCenter defaultCenter] postNotificationName:@"STATION_LIST_READY" object:nil userInfo:@{@"station_array" : stationArray}];
                                                                 });
                                                                }
                                                            }

@@ -10,6 +10,7 @@
 #import "DetailViewController.h"
 #import "StationTableViewCell.h"
 #import "Station.h"
+#import "UIImageView+WebCache.h"
 
 #define DETAIL_SEGUE @"showDetail"
 
@@ -25,28 +26,15 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self createFakeData];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(refreshList:) name:@"STATION_LIST_READY" object:nil];
  }
 
-- (void)createFakeData {
-    
-    Station *station1 = [[Station alloc] init];
-    station1.stationName = @"toto 1";
-    station1.stationBikeAvailable = 3;
-    station1.stationStandsAvailable = 4;
-    
-    Station *station2 = [[Station alloc] init];
-    station2.stationName = @"toto 2";
-    station2.stationBikeAvailable = 12;
-    station2.stationStandsAvailable = 8;
-    
-    Station *station3 = [[Station alloc] init];
-    station3.stationName = @"toto 3";
-    station3.stationBikeAvailable = 9;
-    station3.stationStandsAvailable = 12;
-    
-    self.stationsArray = @[station1,station2,station3];
+- (void)refreshList:(NSNotification *)notification {
+
+    self.stationsArray = notification.userInfo[@"station_array"];
+    [self.tableView reloadData];
 }
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -102,6 +90,9 @@
     cell.stationNameLabel.text = station.stationName;
     cell.stationBikeAvailableLabel.text = [NSString stringWithFormat:@"Il reste %ld vélos dispo",station.stationBikeAvailable];
     cell.stationStandsAvailableLabel.text = [NSString stringWithFormat:@"Il reste %ld Stands dispo",station.stationStandsAvailable];
+    
+    [cell.stationImageView sd_setImageWithURL:[NSURL URLWithString:station.stationImageURL] placeholderImage:[UIImage imageNamed:@"Chat"]];
+
     return cell;
 }
 

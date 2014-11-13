@@ -15,4 +15,6 @@
 @property (nonatomic, assign) NSInteger stationStandsAvailable;
 @property (nonatomic, strong) NSString *stationImageURL;
 
+
+- (void)fillWithDictionary:(NSDictionary *)dict;
 @end
