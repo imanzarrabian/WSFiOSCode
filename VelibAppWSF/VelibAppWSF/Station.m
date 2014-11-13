@@ -21,5 +21,7 @@
     self.stationBikeAvailable = [dict[@"available_bikes"] integerValue];
     self.stationStandsAvailable = [dict[@"available_bike_stands"] integerValue];
     self.stationImageURL = IMAGE_URL;
+    self.stationLat = [dict[@"position"][@"lat"] doubleValue];
+    self.stationLng = [dict[@"position"][@"lng"] doubleValue];
 }
 @end

@@ -23,6 +23,8 @@
 		9C5F5FFA1A14E15B0037BA9C /* UIImageView+HighlightedWebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C5F5FE81A14E15B0037BA9C /* UIImageView+HighlightedWebCache.m */; };
 		9C5F5FFB1A14E15B0037BA9C /* UIImageView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C5F5FEA1A14E15B0037BA9C /* UIImageView+WebCache.m */; };
 		9C5F5FFC1A14E15B0037BA9C /* UIView+WebCacheOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C5F5FEC1A14E15B0037BA9C /* UIView+WebCacheOperation.m */; };
+		9C5F5FFE1A1502C40037BA9C /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C5F5FFD1A1502C40037BA9C /* MapKit.framework */; };
+		9C5F60021A1505F00037BA9C /* StationAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C5F60011A1505F00037BA9C /* StationAnnotation.m */; };
 		9C846FC91A14B24400CFD409 /* Station.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C846FC81A14B24400CFD409 /* Station.m */; };
 		9C9965551A13802D00F1B4CC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C9965541A13802D00F1B4CC /* main.m */; };
 		9C9965581A13802D00F1B4CC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C9965571A13802D00F1B4CC /* AppDelegate.m */; };
@@ -81,6 +83,9 @@
 		9C5F5FEA1A14E15B0037BA9C /* UIImageView+WebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+WebCache.m"; sourceTree = "<group>"; };
 		9C5F5FEB1A14E15B0037BA9C /* UIView+WebCacheOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+WebCacheOperation.h"; sourceTree = "<group>"; };
 		9C5F5FEC1A14E15B0037BA9C /* UIView+WebCacheOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+WebCacheOperation.m"; sourceTree = "<group>"; };
+		9C5F5FFD1A1502C40037BA9C /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		9C5F60001A1505F00037BA9C /* StationAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StationAnnotation.h; sourceTree = "<group>"; };
+		9C5F60011A1505F00037BA9C /* StationAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StationAnnotation.m; sourceTree = "<group>"; };
 		9C846FC71A14B24400CFD409 /* Station.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Station.h; sourceTree = "<group>"; };
 		9C846FC81A14B24400CFD409 /* Station.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Station.m; sourceTree = "<group>"; };
 		9C99654F1A13802D00F1B4CC /* VelibAppWSF.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VelibAppWSF.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -110,6 +115,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C5F5FFE1A1502C40037BA9C /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -171,6 +177,15 @@
 			path = SDWebImage;
 			sourceTree = "<group>";
 		};
+		9C5F5FFF1A1505BA0037BA9C /* Annotations */ = {
+			isa = PBXGroup;
+			children = (
+				9C5F60001A1505F00037BA9C /* StationAnnotation.h */,
+				9C5F60011A1505F00037BA9C /* StationAnnotation.m */,
+			);
+			name = Annotations;
+			sourceTree = "<group>";
+		};
 		9C846FC61A14B20100CFD409 /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -201,6 +216,7 @@
 		9C9965511A13802D00F1B4CC /* VelibAppWSF */ = {
 			isa = PBXGroup;
 			children = (
+				9C5F5FFF1A1505BA0037BA9C /* Annotations */,
 				9C5F5FCA1A14E1480037BA9C /* Lib */,
 				9C846FC61A14B20100CFD409 /* Models */,
 				9CCF50FB1A13B95000857482 /* Cells */,
@@ -219,6 +235,7 @@
 		9C9965521A13802D00F1B4CC /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				9C5F5FFD1A1502C40037BA9C /* MapKit.framework */,
 				9C9965531A13802D00F1B4CC /* Info.plist */,
 				9C9965541A13802D00F1B4CC /* main.m */,
 			);
@@ -384,6 +401,7 @@
 				9C5F5FEF1A14E15B0037BA9C /* SDImageCache.m in Sources */,
 				9C846FC91A14B24400CFD409 /* Station.m in Sources */,
 				9C9965551A13802D00F1B4CC /* main.m in Sources */,
+				9C5F60021A1505F00037BA9C /* StationAnnotation.m in Sources */,
 				9C5F5FF71A14E15B0037BA9C /* UIImage+GIF.m in Sources */,
 				9C5F5FF21A14E15B0037BA9C /* SDWebImageDownloader.m in Sources */,
 				9C5F5FFB1A14E15B0037BA9C /* UIImageView+WebCache.m in Sources */,

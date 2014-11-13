@@ -14,6 +14,10 @@
 @property (nonatomic, assign) NSInteger stationBikeAvailable;
 @property (nonatomic, assign) NSInteger stationStandsAvailable;
 @property (nonatomic, strong) NSString *stationImageURL;
+@property (nonatomic, assign) double stationLat;
+@property (nonatomic, assign) double stationLng;
+
+
 
 
 - (void)fillWithDictionary:(NSDictionary *)dict;

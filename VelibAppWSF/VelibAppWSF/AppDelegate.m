@@ -10,6 +10,8 @@
 #import "DetailViewController.h"
 #import "MasterViewController.h"
 #import "Station.h"
+#import <CoreLocation/CoreLocation.h>
+
 @interface AppDelegate ()
 
 @end
@@ -81,6 +83,10 @@
     UINavigationController *navigationController = (UINavigationController *)self.window.rootViewController;
     MasterViewController *controller = (MasterViewController *)navigationController.topViewController;
     controller.managedObjectContext = self.managedObjectContext;
+   
+    CLLocationManager *locationManager = [[CLLocationManager alloc] init];
+    [locationManager requestAlwaysAuthorization];
+
     return YES;
 }
 
