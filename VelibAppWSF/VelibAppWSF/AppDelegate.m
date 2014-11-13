@@ -85,7 +85,7 @@
     controller.managedObjectContext = self.managedObjectContext;
    
     CLLocationManager *locationManager = [[CLLocationManager alloc] init];
-    [locationManager requestAlwaysAuthorization];
+    [locationManager requestWhenInUseAuthorization];
 
     return YES;
 }

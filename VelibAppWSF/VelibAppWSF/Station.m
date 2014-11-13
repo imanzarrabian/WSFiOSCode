@@ -18,6 +18,7 @@
 
 - (void)fillWithDictionary:(NSDictionary *)dict {
     self.stationName = dict[@"name"];
+    self.stationAdresse = dict[@"address"];
     self.stationBikeAvailable = [dict[@"available_bikes"] integerValue];
     self.stationStandsAvailable = [dict[@"available_bike_stands"] integerValue];
     self.stationImageURL = IMAGE_URL;

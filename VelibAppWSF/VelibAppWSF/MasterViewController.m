@@ -11,7 +11,7 @@
 #import "StationTableViewCell.h"
 #import "Station.h"
 #import "UIImageView+WebCache.h"
-
+#import <CoreLocation/CoreLocation.h>
 #define DETAIL_SEGUE @"showDetail"
 
 @interface MasterViewController ()
@@ -26,8 +26,14 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(refreshList:) name:@"STATION_LIST_READY" object:nil];
  }
+
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+
+}
 
 - (void)refreshList:(NSNotification *)notification {
 
@@ -87,6 +93,7 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     StationTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
     Station *station = self.stationsArray[indexPath.row];
+   
     cell.stationNameLabel.text = station.stationName;
     cell.stationBikeAvailableLabel.text = [NSString stringWithFormat:@"Il reste %ld vélos dispo",station.stationBikeAvailable];
     cell.stationStandsAvailableLabel.text = [NSString stringWithFormat:@"Il reste %ld Stands dispo",station.stationStandsAvailable];

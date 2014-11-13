@@ -11,6 +11,8 @@
 @interface Station : NSObject
 
 @property (nonatomic, strong) NSString *stationName;
+@property (nonatomic, strong) NSString *stationAdresse;
+
 @property (nonatomic, assign) NSInteger stationBikeAvailable;
 @property (nonatomic, assign) NSInteger stationStandsAvailable;
 @property (nonatomic, strong) NSString *stationImageURL;
