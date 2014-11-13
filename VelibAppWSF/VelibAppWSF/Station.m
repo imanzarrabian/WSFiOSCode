@@ -7,7 +7,7 @@
 //
 
 #import "Station.h"
-
+#define IMAGE_URL @"http://vancruisers.ca/Members/bhughes/blog/topic_images/velib.png/image_large"
 @implementation Station
 
 @end

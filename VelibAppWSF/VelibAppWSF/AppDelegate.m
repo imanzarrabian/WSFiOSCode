@@ -18,6 +18,7 @@
 #define BASE_URL @"https://api.jcdecaux.com"
 #define CONTRACT_NAME @"paris"
 
+
 @implementation AppDelegate
 
 - (void)getStationsDataFromRemoteApi {
@@ -50,7 +51,6 @@
                                                                            NSLog(@"STATION %@",station);
 
                                                                        }
-                                                                       
                                                                 });
                                                                }
                                                            }
