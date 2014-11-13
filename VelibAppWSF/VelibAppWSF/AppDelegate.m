@@ -14,7 +14,60 @@
 
 @end
 
+#define API_KEY @"cd982b2f6008d5560b48a2d31cb6d3ad44f11fca"
+#define BASE_URL @"https://api.jcdecaux.com"
+#define CONTRACT_NAME @"paris"
+
 @implementation AppDelegate
+
+- (void)getStationsDataFromRemoteApi {
+    
+   // GET https://api.jcdecaux.com/vls/v1/stations?contract={contract_name}&apiKey={api_key}
+    
+    UIApplication* app = [UIApplication sharedApplication];
+    app.networkActivityIndicatorVisible = YES;
+    
+    NSURLSessionConfiguration *sessionConfiguration = [NSURLSessionConfiguration defaultSessionConfiguration];
+    NSURLSession *session = [NSURLSession sessionWithConfiguration:sessionConfiguration];
+
+    NSString *urlString = [NSString stringWithFormat:@"%@/vls/v1/stations?contract=%@&apiKey=%@",BASE_URL,CONTRACT_NAME,API_KEY];
+    
+    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:urlString]];
+    request.HTTPMethod = @"GET";
+    
+    NSURLSessionDataTask *getDataTask = [session dataTaskWithRequest:request
+                                                   completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
+                                                       app.networkActivityIndicatorVisible = NO;
+                                                       if (!error) {
+                                                           
+                                                           NSError *error2;
+                                                           id jsonObject = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableLeaves error:&error2];
+                                                           if (!error2) {
+                                                               if ([jsonObject isKindOfClass:[NSArray class]]) {
+                                                                   dispatch_async(dispatch_get_main_queue(), ^{
+                                                                       
+                                                                       for (NSDictionary *station in jsonObject) {
+                                                                           NSLog(@"STATION %@",station);
+
+                                                                       }
+                                                                       
+                                                                });
+                                                               }
+                                                           }
+                                                           else {
+                                                               NSLog(@"ERROR WHILE PARSING %@",error2);
+                                                           }
+                                                       }
+                                                       else {
+                                                           NSLog(@"error %@",error);
+                                                       }
+                                                   }];
+    
+    [getDataTask resume];
+
+}
+
+
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
@@ -41,7 +94,10 @@
 
 - (void)applicationDidBecomeActive:(UIApplication *)application {
     // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+    [self getStationsDataFromRemoteApi];
 }
+
+
 
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.

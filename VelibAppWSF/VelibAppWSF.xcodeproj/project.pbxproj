@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9C846FC91A14B24400CFD409 /* Station.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C846FC81A14B24400CFD409 /* Station.m */; };
 		9C9965551A13802D00F1B4CC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C9965541A13802D00F1B4CC /* main.m */; };
 		9C9965581A13802D00F1B4CC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C9965571A13802D00F1B4CC /* AppDelegate.m */; };
 		9C99655B1A13802D00F1B4CC /* VelibAppWSF.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9C9965591A13802D00F1B4CC /* VelibAppWSF.xcdatamodeld */; };
@@ -31,6 +32,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9C846FC71A14B24400CFD409 /* Station.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Station.h; sourceTree = "<group>"; };
+		9C846FC81A14B24400CFD409 /* Station.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Station.m; sourceTree = "<group>"; };
 		9C99654F1A13802D00F1B4CC /* VelibAppWSF.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VelibAppWSF.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C9965531A13802D00F1B4CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9C9965541A13802D00F1B4CC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -71,6 +74,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9C846FC61A14B20100CFD409 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9C846FC71A14B24400CFD409 /* Station.h */,
+				9C846FC81A14B24400CFD409 /* Station.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
 		9C9965461A13802D00F1B4CC = {
 			isa = PBXGroup;
 			children = (
@@ -92,6 +104,7 @@
 		9C9965511A13802D00F1B4CC /* VelibAppWSF */ = {
 			isa = PBXGroup;
 			children = (
+				9C846FC61A14B20100CFD409 /* Models */,
 				9CCF50FB1A13B95000857482 /* Cells */,
 				9C9965811A13813500F1B4CC /* VC */,
 				9C9965561A13802D00F1B4CC /* AppDelegate.h */,
@@ -259,6 +272,7 @@
 				9C99655E1A13802D00F1B4CC /* MasterViewController.m in Sources */,
 				9C9965581A13802D00F1B4CC /* AppDelegate.m in Sources */,
 				9C99655B1A13802D00F1B4CC /* VelibAppWSF.xcdatamodeld in Sources */,
+				9C846FC91A14B24400CFD409 /* Station.m in Sources */,
 				9C9965551A13802D00F1B4CC /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

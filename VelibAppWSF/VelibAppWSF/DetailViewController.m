@@ -16,7 +16,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.title = self.stationName;
+    self.title = self.station.stationName;
 }
 
 - (void)didReceiveMemoryWarning {

@@ -9,6 +9,7 @@
 #import "MasterViewController.h"
 #import "DetailViewController.h"
 #import "StationTableViewCell.h"
+#import "Station.h"
 
 #define DETAIL_SEGUE @"showDetail"
 
@@ -24,7 +25,27 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.stationsArray = @[@"station 1",@"station 2",@"station 3",@"station 4",@"station 5"];
+    [self createFakeData];
+ }
+
+- (void)createFakeData {
+    
+    Station *station1 = [[Station alloc] init];
+    station1.stationName = @"toto 1";
+    station1.stationBikeAvailable = 3;
+    station1.stationStandsAvailable = 4;
+    
+    Station *station2 = [[Station alloc] init];
+    station2.stationName = @"toto 2";
+    station2.stationBikeAvailable = 12;
+    station2.stationStandsAvailable = 8;
+    
+    Station *station3 = [[Station alloc] init];
+    station3.stationName = @"toto 3";
+    station3.stationBikeAvailable = 9;
+    station3.stationStandsAvailable = 12;
+    
+    self.stationsArray = @[station1,station2,station3];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -59,9 +80,8 @@
         NSIndexPath *indexPath;
         if ([cell isKindOfClass:[UITableViewCell class]]) {
             indexPath = [self.tableView indexPathForCell:cell];
-            NSString *stationTitle = self.stationsArray[indexPath.row];
             DetailViewController *detailVC = (DetailViewController *)segue.destinationViewController;
-            detailVC.stationName = stationTitle;
+            detailVC.station = self.stationsArray[indexPath.row];
         }
     }
 }
@@ -78,8 +98,10 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     StationTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
-    cell.stationNameLabel.text = self.stationsArray[indexPath.row];
-   // cell.detailTextLabel.text = @"TOTOT";
+    Station *station = self.stationsArray[indexPath.row];
+    cell.stationNameLabel.text = station.stationName;
+    cell.stationBikeAvailableLabel.text = [NSString stringWithFormat:@"Il reste %ld vélos dispo",station.stationBikeAvailable];
+    cell.stationStandsAvailableLabel.text = [NSString stringWithFormat:@"Il reste %ld Stands dispo",station.stationStandsAvailable];
     return cell;
 }
 
